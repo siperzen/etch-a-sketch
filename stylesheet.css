@@ -22,9 +22,11 @@ button {
 }
 
 .container {
-    width: 480px;
-    height: 480px;
+    max-width: 480px;
+    max-height: 480px;
     padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -36,11 +38,9 @@ button {
 }
 
 .column {
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+    flex: 1 0 auto;
     background-color: red;
     border: 1px solid black;
-    max-height: 100%;
 }
