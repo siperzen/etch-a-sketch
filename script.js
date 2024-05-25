@@ -1,3 +1,4 @@
+
 const button = document.querySelector("button");
 const container = document.querySelector(".container");
 
@@ -26,8 +27,10 @@ function addGrid(number) {
         row.appendChild(column);
 
         const squareHeight = 480 / number;
-        console.log(squareHeight);
+        const squareWidth = 480 / number;
+        
         column.style.height = `${squareHeight}px`;
+        column.style.width = `${squareWidth}px`;
 
         column.addEventListener("mouseover", () => {
             column.style.backgroundColor = randomRgbColor();
